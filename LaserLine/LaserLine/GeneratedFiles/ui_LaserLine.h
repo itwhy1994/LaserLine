@@ -60,6 +60,7 @@ public:
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setSizeConstraint(QLayout::SetMaximumSize);
         label_SrcImg = new QLabel(centralWidget);
         label_SrcImg->setObjectName(QStringLiteral("label_SrcImg"));
         label_SrcImg->setAlignment(Qt::AlignCenter);

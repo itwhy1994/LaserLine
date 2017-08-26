@@ -65,8 +65,6 @@ void LaserLine::OnRotateImg()
     warpAffine(m_mSrcImg, tmpSrcImg, rotateMat, m_mSrcImg.size());
     m_mSrcImg = tmpSrcImg;
     ProcessSrcImg();
-    ProcessThreshold();
-    ProcessIdentifi();
 }
 
 void LaserLine::OnThresholdValue()
@@ -81,13 +79,13 @@ void LaserLine::OnThresholdValue()
         }
     }
     ProcessThreshold();
-    ProcessIdentifi();
 }
 
 void LaserLine::ProcessThreshold()
 {
     cv::threshold(m_mSmoothImg, m_mThresholdImg, m_iThresHoldValue, 255, cv::THRESH_TOZERO);//部分二值化图像
     LabelDisplayMat(ui.label_GrayImg, m_mThresholdImg);//展示部分二值化图像
+    ProcessIdentifi();
 }
 
 void LaserLine::OnReIdentifi()

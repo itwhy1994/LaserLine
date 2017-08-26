@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>884</width>
-    <height>584</height>
+    <height>656</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,6 +17,9 @@
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,1">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetNoConstraint</enum>
+      </property>
       <item>
        <widget class="QLabel" name="label_SrcImg">
         <property name="text">
