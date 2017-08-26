@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>LaserLineWindow</class>
- <widget class="QMainWindow" name="LaserLineWindow">
+ <class>LaserLine</class>
+ <widget class="QMainWindow" name="LaserLine">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -16,7 +16,7 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,1,1">
       <item>
        <widget class="QLabel" name="label_SrcImg">
         <property name="text">
@@ -50,11 +50,38 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,1,1,1,2">
       <item>
        <widget class="QPushButton" name="pushButton_LoadImg">
         <property name="text">
          <string>LoadImg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_RotateImg">
+        <property name="text">
+         <string>RotateImg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_ThresholdSet">
+        <property name="text">
+         <string>ThresholdSet:</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_ThresholdValue"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_ReIdentifi">
+        <property name="text">
+         <string>Identifi/ReIdentifi</string>
         </property>
        </widget>
       </item>
